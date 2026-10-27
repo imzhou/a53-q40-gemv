@@ -1,0 +1,9 @@
+third_party/
+models/
+out/
+build-android-cpu-*/
+board_payload/bin/
+board_payload/models/
+*.gguf
+*.o
+.DS_Store

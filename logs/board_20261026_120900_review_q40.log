@@ -1,0 +1,553 @@
+==== env ====
+Linux localhost 4.9.170 #132 SMP PREEMPT Thu Oct 22 20:20:04 CST 2026 armv8l
+armeabi-v7a
+Mon Oct 26 12:06:23 CST 2026
+uid=0(root) gid=0(root) groups=0(root),1004(input),1007(log),1011(adb),1015(sdcard_rw),1028(sdcard_r),3001(net_bt_admin),3002(net_bt),3003(inet),3006(net_bw_stats),3009(readproc),3011(uhid) context=u:r:su:s0
+==== lock cpufreq performance / max ====
+cpu0 gov=performance cur=1512000 min=1512000 max=1512000
+cpu1 gov=performance cur=1512000 min=1512000 max=1512000
+cpu2 gov=performance cur=1512000 min=1512000 max=1512000
+cpu3 gov=performance cur=1512000 min=1512000 max=1512000
+threads=4 batch=128/64 pp=128,256 tg=32 sleep=8s
+
+==== q40-llama-bench-v7 run 1/10 bin=./bin/llama-bench-v7 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 38954
+therm gpu_thermal_zone 38753
+therm ddr_thermal_zone 39088
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          4.79 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          4.46 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          3.26 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 58518
+therm gpu_thermal_zone 51818
+therm ddr_thermal_zone 54900
+therm axp2202-battery 30000
+
+==== q40-llama-bench-v7 run 2/10 bin=./bin/llama-bench-v7 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 41031
+therm gpu_thermal_zone 42840
+therm ddr_thermal_zone 41634
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          4.87 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          4.44 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          3.23 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 58652
+therm gpu_thermal_zone 51751
+therm ddr_thermal_zone 55436
+therm axp2202-battery 30000
+
+==== q40-llama-bench-v7 run 3/10 bin=./bin/llama-bench-v7 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 41969
+therm gpu_thermal_zone 43041
+therm ddr_thermal_zone 42572
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          4.91 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          4.43 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          3.25 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 58920
+therm gpu_thermal_zone 51885
+therm ddr_thermal_zone 55302
+therm axp2202-battery 30000
+
+==== q40-llama-bench-v7 run 4/10 bin=./bin/llama-bench-v7 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 41902
+therm gpu_thermal_zone 43041
+therm ddr_thermal_zone 42170
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          4.87 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          4.41 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          3.25 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 57312
+therm gpu_thermal_zone 51818
+therm ddr_thermal_zone 53761
+therm axp2202-battery 30000
+
+==== q40-llama-bench-v7 run 5/10 bin=./bin/llama-bench-v7 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 41768
+therm gpu_thermal_zone 43242
+therm ddr_thermal_zone 42438
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          4.89 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          4.43 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          3.21 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 54967
+therm gpu_thermal_zone 50746
+therm ddr_thermal_zone 52421
+therm axp2202-battery 30000
+
+==== q40-llama-bench-v7 run 6/10 bin=./bin/llama-bench-v7 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 41701
+therm gpu_thermal_zone 43175
+therm ddr_thermal_zone 42304
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          4.87 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          4.39 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          3.24 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 53694
+therm gpu_thermal_zone 50411
+therm ddr_thermal_zone 51148
+therm axp2202-battery 30000
+
+==== q40-llama-bench-v7 run 7/10 bin=./bin/llama-bench-v7 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 41768
+therm gpu_thermal_zone 43443
+therm ddr_thermal_zone 42237
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          4.86 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          4.43 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          3.25 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 59255
+therm gpu_thermal_zone 51684
+therm ddr_thermal_zone 55235
+therm axp2202-battery 30000
+
+==== q40-llama-bench-v7 run 8/10 bin=./bin/llama-bench-v7 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 42103
+therm gpu_thermal_zone 42840
+therm ddr_thermal_zone 42706
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          4.87 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          4.40 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          3.22 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 58317
+therm gpu_thermal_zone 51617
+therm ddr_thermal_zone 54498
+therm axp2202-battery 30000
+
+==== q40-llama-bench-v7 run 9/10 bin=./bin/llama-bench-v7 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 41567
+therm gpu_thermal_zone 43175
+therm ddr_thermal_zone 42773
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          4.78 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          4.46 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          3.33 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 56910
+therm gpu_thermal_zone 50478
+therm ddr_thermal_zone 53091
+therm axp2202-battery 30000
+
+==== q40-llama-bench-v7 run 10/10 bin=./bin/llama-bench-v7 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 40026
+therm gpu_thermal_zone 41969
+therm ddr_thermal_zone 40897
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          4.94 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          4.44 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          3.33 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 55771
+therm gpu_thermal_zone 49942
+therm ddr_thermal_zone 51617
+therm axp2202-battery 30000
+
+==== q40-llama-bench-a53 run 1/10 bin=./bin/llama-bench-a53 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 40026
+therm gpu_thermal_zone 41567
+therm ddr_thermal_zone 40629
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          9.31 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          9.05 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          4.88 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 55436
+therm gpu_thermal_zone 50210
+therm ddr_thermal_zone 52153
+therm axp2202-battery 30000
+
+==== q40-llama-bench-a53 run 2/10 bin=./bin/llama-bench-a53 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 39959
+therm gpu_thermal_zone 41768
+therm ddr_thermal_zone 40696
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          9.32 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          9.04 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          4.82 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 54364
+therm gpu_thermal_zone 49808
+therm ddr_thermal_zone 50813
+therm axp2202-battery 30000
+
+==== q40-llama-bench-a53 run 3/10 bin=./bin/llama-bench-a53 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 40294
+therm gpu_thermal_zone 42304
+therm ddr_thermal_zone 40361
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          9.32 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          9.04 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          4.85 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 52287
+therm gpu_thermal_zone 49272
+therm ddr_thermal_zone 49607
+therm axp2202-battery 30000
+
+==== q40-llama-bench-a53 run 4/10 bin=./bin/llama-bench-a53 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 39490
+therm gpu_thermal_zone 41902
+therm ddr_thermal_zone 40696
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          9.36 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          9.03 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          4.81 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 58786
+therm gpu_thermal_zone 51416
+therm ddr_thermal_zone 55369
+therm axp2202-battery 30000
+
+==== q40-llama-bench-a53 run 5/10 bin=./bin/llama-bench-a53 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 40160
+therm gpu_thermal_zone 41701
+therm ddr_thermal_zone 40763
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          9.33 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          9.04 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          4.79 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 52823
+therm gpu_thermal_zone 49473
+therm ddr_thermal_zone 49808
+therm axp2202-battery 30000
+
+==== q40-llama-bench-a53 run 6/10 bin=./bin/llama-bench-a53 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 40763
+therm gpu_thermal_zone 42103
+therm ddr_thermal_zone 41031
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          9.32 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          9.05 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          4.84 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 53292
+therm gpu_thermal_zone 49473
+therm ddr_thermal_zone 49741
+therm axp2202-battery 30000
+
+==== q40-llama-bench-a53 run 7/10 bin=./bin/llama-bench-a53 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 39959
+therm gpu_thermal_zone 41835
+therm ddr_thermal_zone 40964
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          9.32 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          9.04 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          4.85 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 59255
+therm gpu_thermal_zone 51282
+therm ddr_thermal_zone 54833
+therm axp2202-battery 30000
+
+==== q40-llama-bench-a53 run 8/10 bin=./bin/llama-bench-a53 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 40964
+therm gpu_thermal_zone 42036
+therm ddr_thermal_zone 41165
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          9.35 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          9.03 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          4.81 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 59992
+therm gpu_thermal_zone 51483
+therm ddr_thermal_zone 55101
+therm axp2202-battery 30000
+
+==== q40-llama-bench-a53 run 9/10 bin=./bin/llama-bench-a53 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 40026
+therm gpu_thermal_zone 41768
+therm ddr_thermal_zone 41232
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          9.32 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          9.04 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          4.81 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 58920
+therm gpu_thermal_zone 51081
+therm ddr_thermal_zone 54431
+therm axp2202-battery 30000
+
+==== q40-llama-bench-a53 run 10/10 bin=./bin/llama-bench-a53 model=./models/Qwen3-0.6B-Q4_0.gguf ====
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 40026
+therm gpu_thermal_zone 41835
+therm ddr_thermal_zone 40629
+therm axp2202-battery 30000
+| model                          |       size |     params | backend    | threads | n_batch | n_ubatch | dev          |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | -------: | ------------ | --------------: | -------------------: |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp128 |          9.32 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |           pp256 |          8.28 ± 0.00 |
+| qwen3 0.6B Q4_0                | 358.78 MiB |   596.05 M | CPU        |       4 |     128 |       64 | none         |            tg32 |          4.37 ± 0.00 |
+
+build: d772569 (1)
+---- freq/temp ----
+cpu0 1512000
+cpu1 1512000
+cpu2 1512000
+cpu3 1512000
+therm cpu_thermal_zone 52488
+therm gpu_thermal_zone 49406
+therm ddr_thermal_zone 49942
+therm axp2202-battery 30000
+==== done ====
+Mon Oct 26 12:56:15 CST 2026
